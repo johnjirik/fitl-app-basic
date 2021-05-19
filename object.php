@@ -3,38 +3,47 @@ $id = $_REQUEST['id'];
 
 $object = array(
     'title' => '',
-    'name' => '',
-    'blog' => '',
-    'worktop' => '',
-    'code' => '',
+    'headline' => '',
+    'deck' => '',
+    'byline' => '',
     'date' => '',
+    'dateline' => '',
+    'body' => '',
+    'iso' => '',
+    'url' => '',
+    'loaded' =>'',
 );
 
 // set the object variables based on the id value from the URL
 // if id is 1
 if ($id == 1) {
     $object = array(
-        'title' => 'Jirik',
-        'name' => 'John Jirik',
-        'blog' => 'Blog',
-        'worktop' => 'Work',
-        'code' => 'alert(This is a message)',
-        'date' => 'May 17, 2021',
+        'title' => 'newsarchive',
+        'headline' => 'head1',
+        'deck' => 'deck1',
+        'byline' => 'author1',
+        'date' => 'May 18, 2021',
+        'dateline' => 'CLEVELAND',
+        'body' => 'Blah blah blah',
+        'iso_three' => 'USA',
+        'url' => 'www.jirik.com',
+        'loaded' =>'210518',
     );
     
 }
  // if id is 2
 elseif ($id == 2) {
     $object = array(
-        'title' => 'Jirik | Work',
-        'name' => 'Academic',
-        'blog' => 'Click through to blog',
-        'worktop' => '&lt;ul&gt
-            Teaching
-            Writing
-            &lt;/ul&gt;',
-        'code' => 'alert(This is a message)',
-        'date' => 'May 16, 2021',
+        'title' => 'newsarchive',
+        'headline' => 'head2',
+        'deck' => 'deck2',
+        'byline' => 'jj',
+        'date' => 'May 19, 2021',
+        'dateline' => 'LAKEWOOD, Ohio',
+        'body' => 'More blah',
+        'iso_three' => 'USA',
+        'url' => 'www.johnjirik.com',
+        'loaded' =>'210519',
     );
 }
 ?>
@@ -44,12 +53,16 @@ elseif ($id == 2) {
         <title><?php echo $object ['title']; ?></title>
     </head>
     <body>
-        <h1><?php echo $object ['name']; ?></h1>
-        <p><?php echo $object ['blog']; ?></p>
-        <p><?php echo $object ['worktop']; ?></p>
-        <pre>
-            <?php echo $object ['code']; ?> 
-        </pre>
-        <p>Post date: <?php echo $object ['date']; ?></p>
+        <h1><?php echo $object ['headline']; ?></h1>
+        <h3><?php echo $object ['deck']; ?></h3>
+        <p>By <?php echo $object ['byline']; ?></p>
+        <p><?php echo $object ['date']; ?></p>
+        <p><?php echo $object ['dateline']; ?></p>
+        <br>
+        <p><?php echo $object ['body']; ?></p>
+        <br>
+        <p><?php echo $object ['url']; ?></p>
+        <p>Loaded <?php echo $object ['date']; ?></p>
+        <p><?php echo $object ['iso_three']; ?></p>
     </body>
 </html>
