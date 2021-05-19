@@ -9,7 +9,7 @@ $object = array(
     'date' => '',
     'dateline' => '',
     'body' => '',
-    'iso' => '',
+    'iso_three' => '',
     'url' => '',
     'loaded' =>'',
 );
@@ -25,9 +25,9 @@ if ($id == 1) {
         'date' => 'May 18, 2021',
         'dateline' => 'CLEVELAND',
         'body' => 'Blah blah blah',
-        'iso_three' => 'USA',
         'url' => 'www.jirik.com',
         'loaded' =>'210518',
+        'iso_three' => 'USA',
     );
     
 }
@@ -41,9 +41,9 @@ elseif ($id == 2) {
         'date' => 'May 19, 2021',
         'dateline' => 'LAKEWOOD, Ohio',
         'body' => 'More blah',
-        'iso_three' => 'USA',
         'url' => 'www.johnjirik.com',
         'loaded' =>'210519',
+        'iso_three' => 'CLE',
     );
 }
 ?>
