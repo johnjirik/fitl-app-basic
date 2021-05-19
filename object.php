@@ -18,7 +18,7 @@ $object = array(
 // if id is 1
 if ($id == 1) {
     $object = array(
-        'title' => 'newsarchive',
+        'title' => 'News Archive',
         'headline' => 'head1',
         'deck' => 'deck1',
         'byline' => 'author1',
@@ -34,7 +34,7 @@ if ($id == 1) {
  // if id is 2
 elseif ($id == 2) {
     $object = array(
-        'title' => 'newsarchive',
+        'title' => 'News Archive',
         'headline' => 'head2',
         'deck' => 'deck2',
         'byline' => 'jj',
