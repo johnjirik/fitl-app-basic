@@ -29,11 +29,10 @@ if ($connection->connect_error) {
 }
 
 // Otherwise, connect successfully!
-echo 'Connected successfully!';
+// echo 'Connected successfully!';
 
-/* from here to the close of comment I've blocked until I work out the problem in line 39
 // Connect to the "fitl" database
-$connection->select_db('fitl')
+$connection->select_db('fitl');
 
 // Query to select the object
 $sql = 'SELECT * FROM newsarchive WHERE id = ' . $id;
@@ -44,42 +43,9 @@ $result = $connection->query($sql);
 // Check for and retrieve the object
 if ($result->num_rows > 0) {
     $object = $result->fetch_assoc();
-    echo '<pre>';
-    print_r($object);
-    echo '</pre>';
-}
-*/
-// set the object variables based on the id value from the URL
-// if id is 1
-if ($id == 1) {
-    $object = array(
-        'title' => 'News Archive',
-        'headline' => 'head1',
-        'deck' => 'deck1',
-        'byline' => 'author1',
-        'date' => 'May 18, 2021',
-        'dateline' => 'CLEVELAND',
-        'body' => 'Blah blah blah',
-        'url' => 'www.jirik.com',
-        'loaded' =>'210518',
-        'iso_three' => 'USA',
-    );
-    
-}
- // if id is 2
-elseif ($id == 2) {
-    $object = array(
-        'title' => 'News Archive',
-        'headline' => 'head2',
-        'deck' => 'deck2',
-        'byline' => 'jj',
-        'date' => 'May 19, 2021',
-        'dateline' => 'LAKEWOOD, Ohio',
-        'body' => 'More blah',
-        'url' => 'www.johnjirik.com',
-        'loaded' =>'210519',
-        'iso_three' => 'CLE',
-    );
+    // echo '<pre>';
+    // print_r($object);
+    // echo '</pre>';
 }
 ?>
 <!DOCTYPE html>
